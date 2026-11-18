@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+    <h1>Formulário</h1>
+    </header>
+    
+    <section>
+
+        <!--Dados Pessoais-->
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome</label>
+                <input id="name" type="text" name="userName" required>
+
+                <br>
+
+                <!--Idade-->
+                <label for="age">Idade</label>
+                <input id="age" type="number" name="userage" min="12" max="100" required>
+                <!--Data de Nascimento-->
+                <label for="birtDate">Data de Nascimento</label>
+                <input id="birtDate" type="date" name="userbirDate">
+                
+                <br>
+
+                <!--Email-->
+                <label for="email">Email</label>
+                <input id="email" type="email" name="userEmail" required>
+                <!--Telefone-->
+                <label for="phonenumber">Telefone</label>
+                <input id="phonenumber" type="tel" name="userPhonenumber" pattern="[0-9]{11}" placeholder="DDD + Número sem espaços ou hifem" required>
+
+                <br>
+                
+                <!--Imagem-->
+                <label for="image">Upload de foto</label>
+                <input id="image" type="file" name="userImage" accept="image/">
+            </fieldset>
+
+            <!--Perifil-->
+            <fieldset>
+                <legend>Gêneros</legend>
+                <p>Gênero:</p>
+                <input id="masc" type="radio" name="userGrender" value="masculino">
+                <label for="mas">Maculino</label>
+                
+                <input id="fem" type="radio" name="userGrender" value="feminino">
+                <label for="fem">Feminino</label>
+
+                <input id="notInformed" type="radio" name="userGrender" value="notInformed">
+                <label for="notInformed">Prefiro não informar</label>
+
+            <!--Estado Civil-->
+            <br>
+            <label for="mariatalStatus">Estado Civil:</label>
+            <select name="maritalStatus" id="maritalStaus">
+                <option value="notInformed">Selecione...</option>
+                <option value="single">Solteira</option>
+                <option value="married">Casada</option>
+                <option value="divorced">Divorciada</option>
+                <option value="widowed">União Estável</option>
+            </select>
+            <!--Estado-->
+            <br>
+            <label for="Estado">Estado:</label>
+                <select name="Estado" id="Estado">
+                    <label for="estado">Estado:</label>
+                        <option value="selecione">Selecione...</option>
+                        <option value="AC">AC, Acre</option>
+                        <option value="AL">AL, Alagoas</option>
+                        <option value="AP">AP, Amapá</option>
+                        <option value="AM">AM, Amazonas</option>
+                        <option value="BA">BA, Bahia</option>
+                        <option value="CE">CE, Ceará</option>
+                        <option value="DF">DF, Distrito Federal</option>
+                        <option value="ES">ES, Espírito Santo</option>
+                        <option value="GO">GO, Goiás</option>
+                        <option value="MA">MA, Maranhão</option>
+                        <option value="MT">MT, Mato Grosso</option>
+                        <option value="MS">MS, Mato Grosso do Sul</option>
+                        <option value="MG">MG, Minas Gerais</option>
+                        <option value="PA">PA, Pará</option>
+                        <option value="PB">PB, Paraíba</option>
+                        <option value="PR">PR, Paraná</option>
+                        <option value="PE">PE, Pernambuco</option>
+                        <option value="PI">PI, Piauí</option>
+                        <option value="RJ">RJ, Rio de Janeiro</option>
+                        <option value="RN">RN, Rio Grande do Norte</option>
+                        <option value="RS">RS, Rio Grande do Sul</option>
+                        <option value="RO">RO, Rondônia</option>
+                        <option value="RR">RR, Roraima</option>
+                        <option value="SC">SC, Santa Catarina</option>
+                        <option value="SP">SP, São Paulo</option>
+                        <option value="SE">SE, Sergipe</option>
+                        <option value="TO">TO, Tocantins</option>
+            </select>
+            <!--Cidade-->
+            <label for="userCity">Cidade:</label>
+            <input id="userCity" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex: Fortaleza">
+            </fieldset>
+
+            <!--Hábitos-->
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Socias:</p>
+                <input id="instagram" type="checkbox" name="social" value="Instagram">
+                <label for="instagram">Instagram</label>
+                
+                <input id="facebook" type="checkbox" name="social" value="Facebook">
+                <label for="facebook">Facebook</label>
+                
+                <input id="twitter" type="checkbox" name="social" value="Twitter">
+                <label for="twitter">Twitter</label>
+
+                <input id="you tube" type="checkbox" name="social" value="You Tube">
+                <label for="you tube">You Tube</label>
+
+                <input id="tik tok" type="checkbox" name="social" value="Tik Tok">
+                <label for="tik tok">Tik Tok</label>
+
+                <input id="x" type="checkbox" name="social" value="X">
+                <label for="x">X</label>
+
+                <br>
+                <!--Estilo Musical-->
+
+                <label for="musicStyle">Estilo Musical:</label>
+                <input id="musicStyle" type="text" name="userMusicStyle" list="musicStyleList">
+
+                <datalist id="musicStyleList">
+                <option value="Rock">
+                <option value="Pop">
+                <option value="Sertanejo">
+                <option value="Funk">
+                <option value="Pagode">
+                <option value="Forró">
+                <option value="MPB">
+            </datalist>
+            
+            <br>
+            <!--Cor Favorita-->
+            <label for="favoritecolor">Cor Favorita:</label>
+            <input id="favoritecolor" type="color" name="userFavoriteColor">
+
+            </fieldset>
+
+
+
+
+
+                <br>
+                <button type="submit" >Enviar</button>
+            
+        </form>
+
+
+
+
+
+    </section>
+    
+    <main>
+</body>
+</html>
